@@ -1,0 +1,12 @@
+name: Token
+version: "1.21.401"
+api-version: "1.21"
+main: mikeshafter.token.Token
+description: Token signalling system
+prefix: Token
+commands:
+  token:
+    description: "The Token Plugin's Only Command"
+    usage: "/token <args...>"
+    permission: token.token
+    permission-message: "You do not have permission to use this command"

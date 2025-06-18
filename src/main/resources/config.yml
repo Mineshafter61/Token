@@ -1,0 +1,8 @@
+# Signal block materials
+
+# I recommend setting "proceed" to a redstone-solid block (e.g. LIME_WOOL),
+# "warning" to a redstone-transparent block (e.g. GLOWSTONE)
+# and "halt" to a redstone power block (e.g. REDSTONE_BLOCK).
+proceed: LIME_WOOL
+warning: GLOWSTONE
+halt: REDSTONE_BLOCK

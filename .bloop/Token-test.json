@@ -1,0 +1,1095 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "Token-test",
+        "directory": "/Users/mikeshafteure/Documents/GitHub/Token",
+        "workspaceDir": "/Users/mikeshafteure/Documents/GitHub/Token",
+        "sources": [
+            "/Users/mikeshafteure/Documents/GitHub/Token/src/test/java",
+            "/Users/mikeshafteure/Documents/GitHub/Token/src/test/scala"
+        ],
+        "dependencies": [
+            "Token"
+        ],
+        "classpath": [
+            "/Users/mikeshafteure/Documents/GitHub/Token/.bloop/Token/build/classes",
+            "/Users/mikeshafteure/Documents/GitHub/Token/src/main/resources",
+            "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala3-library_3/3.6.4/841add8be0fc408cf492652cd6fec0560dc92a47/scala3-library_3-3.6.4.jar",
+            "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.10.0/8fea1d9c58b2156f1b998f2f18da04bc9e087f74/junit-jupiter-5.10.0.jar",
+            "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.10.0/9041c7365495a897a64782ea5a6fdb99dab1814e/junit-jupiter-params-5.10.0.jar",
+            "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.10.0/2fe4ba3d31d5067878e468c96aa039005a9134d3/junit-jupiter-api-5.10.0.jar",
+            "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.10.0/d533ff2c286eaf963566f92baf5f8a06628d2609/junit-platform-commons-1.10.0.jar",
+            "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.15/ed6f1d58968b16c5f9067d5cac032d952552de58/scala-library-2.13.15.jar",
+            "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.3.0/152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e/opentest4j-1.3.0.jar",
+            "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/a231e0d844d2721b0fa1b238006d15c6ded6842a/apiguardian-api-1.1.2.jar"
+        ],
+        "out": "/Users/mikeshafteure/Documents/GitHub/Token/.bloop/Token-test/build",
+        "classesDir": "/Users/mikeshafteure/Documents/GitHub/Token/.bloop/Token-test/build/classes",
+        "resources": [
+            "/Users/mikeshafteure/Documents/GitHub/Token/src/test/resources"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "3.6.4",
+            "options": [
+                "-deprecation",
+                "-unchecked"
+            ],
+            "jars": [
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/scaladoc_3/3.6.4/f90aa50e125b92b4730d4daa9bcabdfc6f1a1c6f/scaladoc_3-3.6.4.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala3-tasty-inspector_3/3.6.4/ee8124adcf077ba8275dad4bd192979e7504f475/scala3-tasty-inspector_3-3.6.4.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala3-compiler_3/3.6.4/ddf30c264fde4dc13d2fec94fb2d02fae8f5d214/scala3-compiler_3-3.6.4.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala3-sbt-bridge/3.6.4/26b28577063818c51366393e9c2e1df7a7c48671/scala3-sbt-bridge-3.6.4.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala3-interfaces/3.6.4/bfd3ec8f463cab1a2ed13389a809d73a00ae403e/scala3-interfaces-3.6.4.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/tasty-core_3/3.6.4/bc006434bc65c08a32d12eda37ec6a4f3c43ba3/tasty-core_3-3.6.4.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala3-library_3/3.6.4/841add8be0fc408cf492652cd6fec0560dc92a47/scala3-library_3-3.6.4.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-asm/9.7.1-scala-1/a312037e59f55e30ef15b24e7d8c9bcedbc93f4e/scala-asm-9.7.1-scala-1.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-sbt/compiler-interface/1.10.4/d59a0a539e0550c18d7c693b9a476486b18d6fe0/compiler-interface-1.10.4.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.jline/jline-reader/3.27.1/d7e63702fc88c4c838d333a90f3a2db4d5b88457/jline-reader-3.27.1.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.jline/jline-terminal-jni/3.27.1/b5c841eabc71895061b8850cc8c2b988aa045952/jline-terminal-jni-3.27.1.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.jline/jline-terminal/3.27.1/49c957485701003855547d0d262a80bdced17613/jline-terminal-3.27.1.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-ext-anchorlink/0.62.2/3aa453b87258a448dfd8d01010d94e3a2832884d/flexmark-ext-anchorlink-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-ext-autolink/0.62.2/e72d9a9beffc30512e0231a2754d65dd32144744/flexmark-ext-autolink-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-ext-emoji/0.62.2/c1f1b1909bfb6c0f4301a9227745a3ab33b0d08f/flexmark-ext-emoji-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-jira-converter/0.62.2/c172ad9cde6317d84fc15fae53f8eab42d982ade/flexmark-jira-converter-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-ext-gfm-strikethrough/0.62.2/7c0657d663269223c7a5bf29f12982d38d382168/flexmark-ext-gfm-strikethrough-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-ext-gfm-tasklist/0.62.2/1c0fd7a70afac3a93459e49089e2d1b2bf72e590/flexmark-ext-gfm-tasklist-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-ext-wikilink/0.62.2/e07a39268a2091451f3456cb5d9e955bf276f3f4/flexmark-ext-wikilink-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-ext-tables/0.62.2/c95068a1450835c2695750ece82c996a7b57bbd3/flexmark-ext-tables-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-ext-yaml-front-matter/0.62.2/ab1caa230841406bf39fb8f3d69bf82a145fbec3/flexmark-ext-yaml-front-matter-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-ext-ins/0.62.2/234bf93924c93ee2d6d948da5ed82120b0e455c9/flexmark-ext-ins-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-ext-superscript/0.62.2/4bbdbed56d2da352177fdd5ae1c64ac07ace52d9/flexmark-ext-superscript-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark/0.62.2/606a88e1d15aa8debd97cb5dfdf788ddc6fb5b5e/flexmark-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-util/0.62.2/6e38dcd6bb4ccfc13d513aaba350404977fa85bd/flexmark-util-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-util-format/0.62.2/58548be1fc0682698721c0c278451a41f361d3a/flexmark-util-format-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-util-ast/0.62.2/c0b998d5570295f104a4ffee4f8eec305d7db327/flexmark-util-ast-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-util-builder/0.62.2/22c85efb51d4aa25540b8b0d880be7ad4a8baec1/flexmark-util-builder-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-util-dependency/0.62.2/ae5afa76a669e06b3a65255c2ed775ede5cd3eb1/flexmark-util-dependency-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-util-html/0.62.2/6d830cb37e48fd9dca44bf15fbc3a86aa7d82c5a/flexmark-util-html-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-util-options/0.62.2/d871763fff2226c271cc3333e98729ce6211065c/flexmark-util-options-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-util-sequence/0.62.2/87af2803a63b5b07cc42d9c1d98f8ecd4f83fbcc/flexmark-util-sequence-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-util-data/0.62.2/2df8ce1abab2e40edc7d340962025ee1dd09fe02/flexmark-util-data-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/nl.big-o/liqp/0.8.2/ceba9a3456962a22ef0a837af9e4d48b62b63f93/liqp-0.8.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.17.2/1e75b08d7019546a954f1e359477f916f537a34d/jsoup-1.17.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.15.1/21300ba63a6408bbd3505af4287d1b9a911a9718/jackson-datatype-jsr310-2.15.1.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.15.1/ac9ba74d208faf356e4719a49e59c6ea9237c01d/jackson-databind-2.15.1.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.15.1/241c054ba8503de092a12acad9f083dd39935cc0/jackson-core-2.15.1.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.15.1/92a90d3739e970e03b5971839e4fe51f13c1fa3/jackson-annotations-2.15.1.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.15.1/97a9c5867fbacd44a1791c2d0a00bd4f3f061b77/jackson-dataformat-yaml-2.15.1.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.15/ed6f1d58968b16c5f9067d5cac032d952552de58/scala-library-2.13.15.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-sbt/util-interface/1.10.4/3e200045df2988b178d7e7bc33bef7020528d85f/util-interface-1.10.4.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.jline/jline-native/3.27.1/d0b198908023385a089379a1c854aadc7a7dd99b/jline-native-3.27.1.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-util-collection/0.62.2/85253a62761533ce7709f81b0c581c8473f825ec/flexmark-util-collection-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-util-misc/0.62.2/18133dd81887c512e2f56feb3c14a8a1210f30ea/flexmark-util-misc-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.vladsch.flexmark/flexmark-util-visitor/0.62.2/ca49bd94860a5ccedd82bde96ece831f16c66ff1/flexmark-util-visitor-0.62.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/15.0/d40ab99147584cf6cfb5245be67b3fee2c7220f9/annotations-15.0.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.nibor.autolink/autolink/0.6.0/3986d016a14e8c81afeec752f19af29b20e8367b/autolink-0.6.0.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4-runtime/4.7.2/e27d8ab4f984f9d186f54da984a6ab1cccac755e/antlr4-runtime-4.7.2.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/ua.co.k/strftime4j/1.0.5/726bbb2dd522a43c1fd3fb0568693bb5cbdcddf/strftime4j-1.0.5.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/2.0/3aab2116756442bf0d4cd1c089b24d34c3baa253/snakeyaml-2.0.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                "-target",
+                "21",
+                "-source",
+                "21",
+                "-h",
+                "/Users/mikeshafteure/Documents/GitHub/Token/build/generated/sources/headers/java/test",
+                "-g",
+                "-sourcepath",
+                "",
+                "-proc:none",
+                "-XDuseUnsharedTable=true"
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework",
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "utest.runner.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    {
+                        "args": [
+                            "-v",
+                            "-a"
+                        ],
+                        "framework": {
+                            "names": [
+                                "com.novocode.junit.JUnitFramework"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/opt/homebrew/Cellar/openjdk@21/21.0.7/libexec/openjdk.jdk/Contents/Home",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                
+            ],
+            "classpath": [
+                "/Users/mikeshafteure/Documents/GitHub/Token/.bloop/Token/build/classes",
+                "/Users/mikeshafteure/Documents/GitHub/Token/src/main/resources",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala3-library_3/3.6.4/841add8be0fc408cf492652cd6fec0560dc92a47/scala3-library_3-3.6.4.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.10.0/8fea1d9c58b2156f1b998f2f18da04bc9e087f74/junit-jupiter-5.10.0.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.10.0/9041c7365495a897a64782ea5a6fdb99dab1814e/junit-jupiter-params-5.10.0.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.10.0/90587932d718fc51a48112d33045a18476c542ad/junit-jupiter-engine-5.10.0.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.10.0/2fe4ba3d31d5067878e468c96aa039005a9134d3/junit-jupiter-api-5.10.0.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.10.0/276c4edcf64fabb5a139fa7b4f99330d7a93b804/junit-platform-engine-1.10.0.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.10.0/d533ff2c286eaf963566f92baf5f8a06628d2609/junit-platform-commons-1.10.0.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.15/ed6f1d58968b16c5f9067d5cac032d952552de58/scala-library-2.13.15.jar",
+                "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.3.0/152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e/opentest4j-1.3.0.jar"
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "com.google.guava",
+                    "name": "guava",
+                    "version": "32.1.2-jre",
+                    "artifacts": [
+                        {
+                            "name": "guava",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/32.1.2-jre/e1911d4544f426600132fbd450a7ccab8a3ce8dc/guava-32.1.2-jre-sources.jar"
+                        },
+                        {
+                            "name": "guava",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/32.1.2-jre/5e64ec7e056456bef3a4bc4c6fdaef71e8ab6318/guava-32.1.2-jre.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.md-5",
+                    "name": "bungeecord-chat",
+                    "version": "1.20-R0.2-deprecated+build.18",
+                    "artifacts": [
+                        {
+                            "name": "bungeecord-chat",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-chat/1.20-R0.2-deprecated+build.18/5035a741a44c35d9284251413050dc6470c09978/bungeecord-chat-1.20-R0.2-deprecated+build.18.jar"
+                        },
+                        {
+                            "name": "bungeecord-chat",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-chat/1.20-R0.2-deprecated+build.18/9b231e49c232114046a0ef1c0044f2a01e817d25/bungeecord-chat-1.20-R0.2-deprecated+build.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jetbrains",
+                    "name": "annotations",
+                    "version": "24.1.0",
+                    "artifacts": [
+                        {
+                            "name": "annotations",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/24.1.0/7af6a669488450c4a07c2c3254e2151df42d7d04/annotations-24.1.0.jar"
+                        },
+                        {
+                            "name": "annotations",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/24.1.0/d90a405211798b013b8ee3d54f70edc0913a28b0/annotations-24.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "it.unimi.dsi",
+                    "name": "fastutil",
+                    "version": "8.5.6",
+                    "artifacts": [
+                        {
+                            "name": "fastutil",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.5.6/cae16d296ddc343bfb4e20ef67fbcef07fca40e/fastutil-8.5.6-sources.jar"
+                        },
+                        {
+                            "name": "fastutil",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.5.6/76f95700418a68fbc4ac050525261f05dc681ca1/fastutil-8.5.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "listenablefuture",
+                    "version": "9999.0-empty-to-avoid-conflict-with-guava",
+                    "artifacts": [
+                        {
+                            "name": "listenablefuture",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.auto.service",
+                    "name": "auto-service-annotations",
+                    "version": "1.1.1",
+                    "artifacts": [
+                        {
+                            "name": "auto-service-annotations",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.google.auto.service/auto-service-annotations/1.1.1/b855be4f39e0fe5bb27dd137fd37dd4c4e2c2f5a/auto-service-annotations-1.1.1-sources.jar"
+                        },
+                        {
+                            "name": "auto-service-annotations",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.google.auto.service/auto-service-annotations/1.1.1/da12a15cd058ba90a0ff55357fb521161af4736d/auto-service-annotations-1.1.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.papermc.paper",
+                    "name": "paper-api",
+                    "version": "1.21-R0.1-SNAPSHOT",
+                    "artifacts": [
+                        {
+                            "name": "paper-api",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/io.papermc.paper/paper-api/1.21-R0.1-SNAPSHOT/8cda3e70e1344de3503ff7c0c53c29eda9e510b2/paper-api-1.21-R0.1-SNAPSHOT.jar"
+                        },
+                        {
+                            "name": "paper-api",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/io.papermc.paper/paper-api/1.21-R0.1-SNAPSHOT/a28f8125ef0acba60b27f774a618ab045bc18cc8/paper-api-1.21-R0.1-SNAPSHOT-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.maven",
+                    "name": "maven-resolver-provider",
+                    "version": "3.9.6",
+                    "artifacts": [
+                        {
+                            "name": "maven-resolver-provider",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-resolver-provider/3.9.6/7a77fd34d816837109af6cc4a0ac68126e4e560d/maven-resolver-provider-3.9.6-sources.jar"
+                        },
+                        {
+                            "name": "maven-resolver-provider",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-resolver-provider/3.9.6/848c45d334f6cc5c8dd602b0e58fd4482964eddc/maven-resolver-provider-3.9.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.platform",
+                    "name": "junit-platform-engine",
+                    "version": "1.10.0",
+                    "artifacts": [
+                        {
+                            "name": "junit-platform-engine",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.10.0/886c197f5fcfe9eaf0d1dde20aa1bd3abd653f44/junit-platform-engine-1.10.0-sources.jar"
+                        },
+                        {
+                            "name": "junit-platform-engine",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.10.0/276c4edcf64fabb5a139fa7b4f99330d7a93b804/junit-platform-engine-1.10.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.kyori",
+                    "name": "adventure-text-serializer-legacy",
+                    "version": "4.17.0",
+                    "artifacts": [
+                        {
+                            "name": "adventure-text-serializer-legacy",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-legacy/4.17.0/1f5271e54a4feb6dada26873297337f4b9f2f99a/adventure-text-serializer-legacy-4.17.0.jar"
+                        },
+                        {
+                            "name": "adventure-text-serializer-legacy",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-legacy/4.17.0/73badb50b13f8f4f14475898a3a474847b4d1c30/adventure-text-serializer-legacy-4.17.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.inject",
+                    "name": "javax.inject",
+                    "version": "1",
+                    "artifacts": [
+                        {
+                            "name": "javax.inject",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/a00123f261762a7c5e0ec916a2c7c8298d29c400/javax.inject-1-sources.jar"
+                        },
+                        {
+                            "name": "javax.inject",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.maven.resolver",
+                    "name": "maven-resolver-spi",
+                    "version": "1.9.18",
+                    "artifacts": [
+                        {
+                            "name": "maven-resolver-spi",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-spi/1.9.18/7fa176b3353ef6d78d02db39e025f3c27a983158/maven-resolver-spi-1.9.18.jar"
+                        },
+                        {
+                            "name": "maven-resolver-spi",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-spi/1.9.18/89e52e816af2d35fe261b812ed0f68c2d21ea6f7/maven-resolver-spi-1.9.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.googlecode.json-simple",
+                    "name": "json-simple",
+                    "version": "1.1.1",
+                    "artifacts": [
+                        {
+                            "name": "json-simple",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar"
+                        },
+                        {
+                            "name": "json-simple",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/15bba08e3a239d54b68209c001f9c911559d2fed/json-simple-1.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.maven.resolver",
+                    "name": "maven-resolver-named-locks",
+                    "version": "1.9.18",
+                    "artifacts": [
+                        {
+                            "name": "maven-resolver-named-locks",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-named-locks/1.9.18/bc415bfdb1c077c0c09507b3b1969bcb4474a5ce/maven-resolver-named-locks-1.9.18-sources.jar"
+                        },
+                        {
+                            "name": "maven-resolver-named-locks",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-named-locks/1.9.18/31f948d89dcb3d9739e70d5e1000ebd68eb4405d/maven-resolver-named-locks-1.9.18.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.kyori",
+                    "name": "option",
+                    "version": "1.0.0",
+                    "artifacts": [
+                        {
+                            "name": "option",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/option/1.0.0/59c5ae54c47ae294322ad979eaf7cdcde7ad0646/option-1.0.0.jar"
+                        },
+                        {
+                            "name": "option",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/option/1.0.0/61ae980594e69740c1abf8cf26c4877a327fdbb4/option-1.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.kyori",
+                    "name": "adventure-text-minimessage",
+                    "version": "4.17.0",
+                    "artifacts": [
+                        {
+                            "name": "adventure-text-minimessage",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-minimessage/4.17.0/696817a0f9700483bcd9dbd5cc62f33ac83b12f9/adventure-text-minimessage-4.17.0.jar"
+                        },
+                        {
+                            "name": "adventure-text-minimessage",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-minimessage/4.17.0/adb7d94422a164f198dd19d69e245fac7b0eab53/adventure-text-minimessage-4.17.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.maven",
+                    "name": "maven-repository-metadata",
+                    "version": "3.9.6",
+                    "artifacts": [
+                        {
+                            "name": "maven-repository-metadata",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-repository-metadata/3.9.6/497cda3149f3c661113f9a663e0270ce2566cc95/maven-repository-metadata-3.9.6.jar"
+                        },
+                        {
+                            "name": "maven-repository-metadata",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-repository-metadata/3.9.6/120ad7da7200f28c6fa1e44fbbd174ffd294cb64/maven-repository-metadata-3.9.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "2.0.9",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.9/97e46b94d70f47892145e09d685461245584d596/slf4j-api-2.0.9-sources.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.9/7cf2726fdcfbc8610f9a71fb3ed639871f315340/slf4j-api-2.0.9.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.maven.resolver",
+                    "name": "maven-resolver-impl",
+                    "version": "1.9.18",
+                    "artifacts": [
+                        {
+                            "name": "maven-resolver-impl",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-impl/1.9.18/e928b128d1e52e6299f94431ce3df74647bc8c26/maven-resolver-impl-1.9.18.jar"
+                        },
+                        {
+                            "name": "maven-resolver-impl",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-impl/1.9.18/da21bc5d4f6329c14aa60e4e9cbc7dbd13173cfc/maven-resolver-impl-1.9.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.yaml",
+                    "name": "snakeyaml",
+                    "version": "2.2",
+                    "artifacts": [
+                        {
+                            "name": "snakeyaml",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/2.2/575a7915b847393207642575c139177ac2b2ac23/snakeyaml-2.2-sources.jar"
+                        },
+                        {
+                            "name": "snakeyaml",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/2.2/3af797a25458550a16bf89acc8e4ab2b7f2bfce0/snakeyaml-2.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.gson",
+                    "name": "gson",
+                    "version": "2.10.1",
+                    "artifacts": [
+                        {
+                            "name": "gson",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/b3add478d4382b78ea20b1671390a858002feb6c/gson-2.10.1.jar"
+                        },
+                        {
+                            "name": "gson",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/982a90132e942f302e6fe79d6e78c4bc2e998569/gson-2.10.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-lang3",
+                    "version": "3.12.0",
+                    "artifacts": [
+                        {
+                            "name": "commons-lang3",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e/commons-lang3-3.12.0.jar"
+                        },
+                        {
+                            "name": "commons-lang3",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/198b882fdc2c72c89c63401d946f6ba46c3acea3/commons-lang3-3.12.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.maven.resolver",
+                    "name": "maven-resolver-util",
+                    "version": "1.9.18",
+                    "artifacts": [
+                        {
+                            "name": "maven-resolver-util",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-util/1.9.18/dcfdd5003f373a2c0eb2549c983b945de73a37eb/maven-resolver-util-1.9.18-sources.jar"
+                        },
+                        {
+                            "name": "maven-resolver-util",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-util/1.9.18/5ae9406f188ae4a999c353fce3fd77273797a216/maven-resolver-util-1.9.18.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.kyori",
+                    "name": "examination-api",
+                    "version": "1.3.0",
+                    "artifacts": [
+                        {
+                            "name": "examination-api",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/examination-api/1.3.0/24ee397e9360897e1a5053e269be691abc611ca2/examination-api-1.3.0-sources.jar"
+                        },
+                        {
+                            "name": "examination-api",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/examination-api/1.3.0/8a2d185275307f1e2ef2adf7152b9a0d1d44c30b/examination-api-1.3.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.maven.resolver",
+                    "name": "maven-resolver-api",
+                    "version": "1.9.18",
+                    "artifacts": [
+                        {
+                            "name": "maven-resolver-api",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-api/1.9.18/cd5174d6e80175398debe4869d484169c0abbf8/maven-resolver-api-1.9.18.jar"
+                        },
+                        {
+                            "name": "maven-resolver-api",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-api/1.9.18/4db186e57d54327998cf9923332c557ac18dcab0/maven-resolver-api-1.9.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.codehaus.plexus",
+                    "name": "plexus-interpolation",
+                    "version": "1.26",
+                    "artifacts": [
+                        {
+                            "name": "plexus-interpolation",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-interpolation/1.26/25b919c664b79795ccde0ede5cee0fd68b544197/plexus-interpolation-1.26.jar"
+                        },
+                        {
+                            "name": "plexus-interpolation",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-interpolation/1.26/7182d32d452bbfedfe88ecd86245ef7b90048460/plexus-interpolation-1.26-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.j2objc",
+                    "name": "j2objc-annotations",
+                    "version": "2.8",
+                    "artifacts": [
+                        {
+                            "name": "j2objc-annotations",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/2.8/c85270e307e7b822f1086b93689124b89768e273/j2objc-annotations-2.8.jar"
+                        },
+                        {
+                            "name": "j2objc-annotations",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/2.8/74fb66e276fc42784d884d51f841e35232bc90de/j2objc-annotations-2.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.platform",
+                    "name": "junit-platform-commons",
+                    "version": "1.10.0",
+                    "artifacts": [
+                        {
+                            "name": "junit-platform-commons",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.10.0/d533ff2c286eaf963566f92baf5f8a06628d2609/junit-platform-commons-1.10.0.jar"
+                        },
+                        {
+                            "name": "junit-platform-commons",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.10.0/74f2f9694d30effa2caff679b9f02ba832cbd1ac/junit-platform-commons-1.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter-engine",
+                    "version": "5.10.0",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter-engine",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.10.0/90587932d718fc51a48112d33045a18476c542ad/junit-jupiter-engine-5.10.0.jar"
+                        },
+                        {
+                            "name": "junit-jupiter-engine",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.10.0/4fe7a5334478bc8e93bbcb471e24c0fa13520ea7/junit-jupiter-engine-5.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.maven",
+                    "name": "maven-model-builder",
+                    "version": "3.9.6",
+                    "artifacts": [
+                        {
+                            "name": "maven-model-builder",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model-builder/3.9.6/983ce00d50a9f78ad1b805e21e4fd71807fa6ebf/maven-model-builder-3.9.6.jar"
+                        },
+                        {
+                            "name": "maven-model-builder",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model-builder/3.9.6/f006cf5ef51213569e4987e99242f99dc3f25bdf/maven-model-builder-3.9.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.15",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.15/74d77ff523df1290b08a35bb2e0534f591649e94/scala-library-2.13.15-sources.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.15/ed6f1d58968b16c5f9067d5cac032d952552de58/scala-library-2.13.15.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.codehaus.plexus",
+                    "name": "plexus-utils",
+                    "version": "3.5.1",
+                    "artifacts": [
+                        {
+                            "name": "plexus-utils",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.5.1/c6bfb17c97ecc8863e88778ea301be742c62b06d/plexus-utils-3.5.1.jar"
+                        },
+                        {
+                            "name": "plexus-utils",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.5.1/b9890d32e9293bf8e1e792d17346ff5482d3acb4/plexus-utils-3.5.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.kyori",
+                    "name": "adventure-text-logger-slf4j",
+                    "version": "4.17.0",
+                    "artifacts": [
+                        {
+                            "name": "adventure-text-logger-slf4j",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-logger-slf4j/4.17.0/ebc3d59bdce591f1e1daed8b5b9ebd13f231c946/adventure-text-logger-slf4j-4.17.0.jar"
+                        },
+                        {
+                            "name": "adventure-text-logger-slf4j",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-logger-slf4j/4.17.0/cedfa1e66726bd34145bcb243ba25798cf544c27/adventure-text-logger-slf4j-4.17.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.opentest4j",
+                    "name": "opentest4j",
+                    "version": "1.3.0",
+                    "artifacts": [
+                        {
+                            "name": "opentest4j",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.3.0/afb8ff23cffb021c56f333953aebfe6e8818568e/opentest4j-1.3.0-sources.jar"
+                        },
+                        {
+                            "name": "opentest4j",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.3.0/152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e/opentest4j-1.3.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.kyori",
+                    "name": "adventure-key",
+                    "version": "4.17.0",
+                    "artifacts": [
+                        {
+                            "name": "adventure-key",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-key/4.17.0/c98d527bb92dcc718441f6e7eb2c47dbb928104e/adventure-key-4.17.0-sources.jar"
+                        },
+                        {
+                            "name": "adventure-key",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-key/4.17.0/799f1b5fedb920a7b71916e9b71123ff94d07acf/adventure-key-4.17.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.kyori",
+                    "name": "adventure-text-serializer-plain",
+                    "version": "4.17.0",
+                    "artifacts": [
+                        {
+                            "name": "adventure-text-serializer-plain",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-plain/4.17.0/ac19c1579081064f86025c5ada60dba0b61fca31/adventure-text-serializer-plain-4.17.0.jar"
+                        },
+                        {
+                            "name": "adventure-text-serializer-plain",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-plain/4.17.0/1e427726d7960fa2b09c9396cfa69795378ea5e9/adventure-text-serializer-plain-4.17.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.kyori",
+                    "name": "adventure-api",
+                    "version": "4.17.0",
+                    "artifacts": [
+                        {
+                            "name": "adventure-api",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-api/4.17.0/e90703097679e9ca0ee8a059bb933aa7d495bce3/adventure-api-4.17.0.jar"
+                        },
+                        {
+                            "name": "adventure-api",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-api/4.17.0/9fe291e1a4094136f8632c7d28096e95088121f7/adventure-api-4.17.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.errorprone",
+                    "name": "error_prone_annotations",
+                    "version": "2.18.0",
+                    "artifacts": [
+                        {
+                            "name": "error_prone_annotations",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.18.0/8781f46ef842929cf22e83273ef0d2091b96845f/error_prone_annotations-2.18.0-sources.jar"
+                        },
+                        {
+                            "name": "error_prone_annotations",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.18.0/89b684257096f548fa39a7df9fdaa409d4d4df91/error_prone_annotations-2.18.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.maven",
+                    "name": "maven-model",
+                    "version": "3.9.6",
+                    "artifacts": [
+                        {
+                            "name": "maven-model",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model/3.9.6/500fba7a5b73d6b24b37fbef06ce05d76d8ddc56/maven-model-3.9.6-sources.jar"
+                        },
+                        {
+                            "name": "maven-model",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model/3.9.6/ac9a1c8a8cfa36f3a5489837e653ec0cd530d576/maven-model-3.9.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter",
+                    "version": "5.10.0",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.10.0/8fea1d9c58b2156f1b998f2f18da04bc9e087f74/junit-jupiter-5.10.0.jar"
+                        },
+                        {
+                            "name": "junit-jupiter",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.10.0/4e79ee610aff59d79b5f229252ded392b7d48fd1/junit-jupiter-5.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter-params",
+                    "version": "5.10.0",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter-params",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.10.0/9041c7365495a897a64782ea5a6fdb99dab1814e/junit-jupiter-params-5.10.0.jar"
+                        },
+                        {
+                            "name": "junit-jupiter-params",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.10.0/6c4fb5ab59bbc63438f3c618d769c4eddd65654/junit-jupiter-params-5.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter-api",
+                    "version": "5.10.0",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter-api",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.10.0/551bc33910fee1c601da155a77f67f70f66f6a27/junit-jupiter-api-5.10.0-sources.jar"
+                        },
+                        {
+                            "name": "junit-jupiter-api",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.10.0/2fe4ba3d31d5067878e468c96aa039005a9134d3/junit-jupiter-api-5.10.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.joml",
+                    "name": "joml",
+                    "version": "1.10.5",
+                    "artifacts": [
+                        {
+                            "name": "joml",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.joml/joml/1.10.5/22566d58af70ad3d72308bab63b8339906deb649/joml-1.10.5.jar"
+                        },
+                        {
+                            "name": "joml",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.joml/joml/1.10.5/c1f2266a7d0386d7643879ed1b93f51d29126180/joml-1.10.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.kyori",
+                    "name": "adventure-text-serializer-gson",
+                    "version": "4.17.0",
+                    "artifacts": [
+                        {
+                            "name": "adventure-text-serializer-gson",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-gson/4.17.0/1b2cf73c8794287db202b2ea288c40159deb19b4/adventure-text-serializer-gson-4.17.0.jar"
+                        },
+                        {
+                            "name": "adventure-text-serializer-gson",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-gson/4.17.0/7efa0778cbd34e895f3da592715855f1de8ce8c4/adventure-text-serializer-gson-4.17.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.kyori",
+                    "name": "examination-string",
+                    "version": "1.3.0",
+                    "artifacts": [
+                        {
+                            "name": "examination-string",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/examination-string/1.3.0/6f34afef5c54ccce4996bc321abf77518b55b4bd/examination-string-1.3.0.jar"
+                        },
+                        {
+                            "name": "examination-string",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/examination-string/1.3.0/d06d07677cf2022bdf38136ba550aea9852cc1bd/examination-string-1.3.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.eclipse.sisu",
+                    "name": "org.eclipse.sisu.inject",
+                    "version": "0.9.0.M2",
+                    "artifacts": [
+                        {
+                            "name": "org.eclipse.sisu.inject",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.eclipse.sisu/org.eclipse.sisu.inject/0.9.0.M2/5ace70e1ea696d156f5034a42a615df13a52003a/org.eclipse.sisu.inject-0.9.0.M2.jar"
+                        },
+                        {
+                            "name": "org.eclipse.sisu.inject",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.eclipse.sisu/org.eclipse.sisu.inject/0.9.0.M2/616a449f1e1894b67b23ca64197a4cf4019e18a6/org.eclipse.sisu.inject-0.9.0.M2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.mojang",
+                    "name": "brigadier",
+                    "version": "1.2.9",
+                    "artifacts": [
+                        {
+                            "name": "brigadier",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.2.9/73e324f2ee541493a5179abf367237faa782ed21/brigadier-1.2.9.jar"
+                        },
+                        {
+                            "name": "brigadier",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.2.9/b81375eb6ee3fccbda1841a5620a61798655beb/brigadier-1.2.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.kyori",
+                    "name": "adventure-text-serializer-json",
+                    "version": "4.17.0",
+                    "artifacts": [
+                        {
+                            "name": "adventure-text-serializer-json",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-json/4.17.0/4651a58fe70ecc8a3682ec7ddd8a516dd6d06a49/adventure-text-serializer-json-4.17.0.jar"
+                        },
+                        {
+                            "name": "adventure-text-serializer-json",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-json/4.17.0/9b7d67b6d232dff97bc6468e35357e7f86db4aed/adventure-text-serializer-json-4.17.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.logging.log4j",
+                    "name": "log4j-api",
+                    "version": "2.17.1",
+                    "artifacts": [
+                        {
+                            "name": "log4j-api",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.1/d771af8e336e372fb5399c99edabe0919aeaf5b2/log4j-api-2.17.1.jar"
+                        },
+                        {
+                            "name": "log4j-api",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.1/d23d37cc41300a7f6eba7813855dbb224e2a3177/log4j-api-2.17.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apiguardian",
+                    "name": "apiguardian-api",
+                    "version": "1.1.2",
+                    "artifacts": [
+                        {
+                            "name": "apiguardian-api",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/a231e0d844d2721b0fa1b238006d15c6ded6842a/apiguardian-api-1.1.2.jar"
+                        },
+                        {
+                            "name": "apiguardian-api",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/e0787a997746ac32639e0bf3cb27af8dce8a3428/apiguardian-api-1.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.maven",
+                    "name": "maven-builder-support",
+                    "version": "3.9.6",
+                    "artifacts": [
+                        {
+                            "name": "maven-builder-support",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-builder-support/3.9.6/bcfc9d8175eaba21111edf21e0355a8523461abc/maven-builder-support-3.9.6.jar"
+                        },
+                        {
+                            "name": "maven-builder-support",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-builder-support/3.9.6/7d6a7a1340ca92d3f8483652996cdddaf7b88e47/maven-builder-support-3.9.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.maven",
+                    "name": "maven-artifact",
+                    "version": "3.9.6",
+                    "artifacts": [
+                        {
+                            "name": "maven-artifact",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.9.6/fb0979832c10c1a25d038a33ca862bef055fcdc8/maven-artifact-3.9.6.jar"
+                        },
+                        {
+                            "name": "maven-artifact",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.9.6/e320a85bccc2645504152771d2ef86dabcc70edd/maven-artifact-3.9.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala3-library_3",
+                    "version": "3.6.4",
+                    "artifacts": [
+                        {
+                            "name": "scala3-library_3",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala3-library_3/3.6.4/970b7ffd01d46055688e865d9499ce1fe998bb13/scala3-library_3-3.6.4-sources.jar"
+                        },
+                        {
+                            "name": "scala3-library_3",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala3-library_3/3.6.4/841add8be0fc408cf492652cd6fec0560dc92a47/scala3-library_3-3.6.4.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.checkerframework",
+                    "name": "checker-qual",
+                    "version": "3.33.0",
+                    "artifacts": [
+                        {
+                            "name": "checker-qual",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.33.0/ee4ecf6c55e3f2b05b839aa05c70f1298437ebe9/checker-qual-3.33.0-sources.jar"
+                        },
+                        {
+                            "name": "checker-qual",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.33.0/de2b60b62da487644fc11f734e73c8b0b431238f/checker-qual-3.33.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "3.0.2",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/b19b5927c2c25b6c70f093767041e641ae0b1b35/jsr305-3.0.2-sources.jar"
+                        },
+                        {
+                            "name": "jsr305",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "failureaccess",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "failureaccess",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar"
+                        },
+                        {
+                            "name": "failureaccess",
+                            "classifier": "sources",
+                            "path": "/Users/mikeshafteure/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1d064e61aad6c51cc77f9b59dc2cccc78e792f5a/failureaccess-1.0.1-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}
