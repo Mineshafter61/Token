@@ -27,8 +27,9 @@ def removeTrain(direction: Direction.Value): Boolean = {
 		currentTrains -= 1
 		if (currentTrains == 0) currentDir = Direction.NONE
 		true
-	} else if (currentTrains == 1 && (direction == Direction.UP || direction == Direction.DOWN)) {
+	} else if (currentTrains == 1 && direction.id != 0) {
 		currentTrains -= 1
+		currentDir = Direction.NONE
 		true
 	} else false
 }

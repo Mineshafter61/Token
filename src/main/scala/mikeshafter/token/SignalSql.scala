@@ -76,4 +76,21 @@ class SignalSql {
 			if (statement != null) statement.close();
 		}
 	}
+
+	def removeSignal (signal: String) = {
+		val sql = "DELETE FROM signals WHERE signo = ? ; ";
+		val conn = this.connect();
+		val statement = conn.prepareStatement(sql);
+		try {
+			statement.setString(1, signal);
+			statement.executeUpdate;
+		}
+		catch {
+			case e: SQLException => this.plugin.getLogger.warning(e.getLocalizedMessage);
+		}
+		finally {
+			if (conn != null) conn.close();
+			if (statement != null) statement.close();
+		}
+	}
 }

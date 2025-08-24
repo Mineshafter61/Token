@@ -52,10 +52,11 @@ class TokenPost extends Listener {
 		val statusMsg = mm( s"<blue>Direction: <white>${section.currentDir}</white> Max Trains: <white>${section.maxTrains}</white> Current Trains: <white>${section.currentTrains}</white></blue>");
 		player.sendMessage(statusMsg);
 
-		if (item.getItemMeta() != null && item.getItemMeta.lore != null && plain.serialize(item.getItemMeta.lore.get(0)).equals(sectionId) ) {
+		if (item.getItemMeta != null && item.getItemMeta.lore != null && plain.serialize(item.getItemMeta.lore.get(0)).equals(sectionId) ) {
 			// player has token
 		}
 
+	    // player has no item
 		if (item == null) {
 			if (!section.insertTrain(direction)) {
 				player.sendMessage(mm("<red>ERROR: Section full! Token could not be generated.</red>"));
@@ -73,12 +74,12 @@ class TokenPost extends Listener {
 			val successMsg = mm( s"<green>Token generated for: <white>$sectionId</white>\nCurrent trains (incl. you): <white>${section.currentTrains}</white></green>");
 			player.sendMessage(successMsg);
 		}
+		// player has token
 		else if (item.getItemMeta != null && item.getItemMeta.lore != null && plain.serialize(item.getItemMeta.lore.get(0)).equals(sectionId)) {
 			if (!section.removeTrainOpposite(direction)) {
 				player.sendMessage(mm("<red>ERROR: Section empty/direction invalid! Token could not be received.</red>"));
 				return;
 			}
-			item.setAmount(1);
 			player.getInventory.remove(item);
 
 			val receivedMsg = mm( s"<green>Token has been received for the section <white>$sectionId</white></green>");

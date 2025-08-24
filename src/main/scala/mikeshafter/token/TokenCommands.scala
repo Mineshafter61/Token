@@ -2,17 +2,15 @@ package mikeshafter.token;
 
 import com.mojang.brigadier.Command
 import com.mojang.brigadier.arguments.{IntegerArgumentType, LongArgumentType, StringArgumentType}
-import com.mojang.brigadier.builder.LiteralArgumentBuilder
 import com.mojang.brigadier.tree.LiteralCommandNode
 import io.papermc.paper.command.brigadier.{CommandSourceStack, Commands}
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.minimessage.MiniMessage
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer
-import org.bukkit.{Location, Material, World}
-import org.bukkit.block.Block
 import org.bukkit.command.BlockCommandSender
 import org.bukkit.entity.Player
-import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.ItemStack
+import org.bukkit.{Location, Material};
 
 
 class TokenCommands {
@@ -33,7 +31,7 @@ private val clearTokenSectionCmd = Commands.literal("cleartokensection")
         )
     );
 
-private val getSignalTool = Commands.literal("getSignalTool")
+private val getSignalTool = Commands.literal("getsignaltool")
     .executes(ctx => {
         val sender = ctx.getSource.getSender;
         sender match
@@ -53,6 +51,7 @@ private val newSignalCmd = Commands.literal("newsignal")
     .`then`(Commands.argument("x", LongArgumentType.longArg())
         .`then`(Commands.argument("y", LongArgumentType.longArg())
             .`then`(Commands.argument("z", LongArgumentType.longArg())
+				.`then`(Commands.argument("name", StringArgumentType.string())
                 .executes(ctx => {
                     val x = ctx.getArgument("x", classOf[Int]);
                     val y = ctx.getArgument("y", classOf[Int]);
@@ -61,17 +60,26 @@ private val newSignalCmd = Commands.literal("newsignal")
                         case player: Player => player.getWorld
                         case block: BlockCommandSender => block.getBlock.getWorld
                     val loc: Location = new Location(w,x,y,z)
-                      Command.SINGLE_SUCCESS;
-                })
+                    val name: String = ctx.getArgument("name", classOf[String]);
+                    SignalSql().newSignal(name, "", loc);
+                    Command.SINGLE_SUCCESS;
+                }))
             )
         )
     );
 
-private val setSignalCmd = Commands.literal("setsignal");
+private val removeSignalCmd = Commands.literal("removesignal")
+	.`then`(Commands.argument("name", StringArgumentType.string())
+		.executes(ctx => {
+			val name: String = ctx.getArgument("name", classOf[String]);
+			SignalSql().removeSignal(name);
+			Command.SINGLE_SUCCESS;
+		})
+	);
 
 val commands: LiteralCommandNode[CommandSourceStack] = Commands.literal("token")
     .`then`(clearTokenSectionCmd)
     .`then`(getSignalTool)
-    .`then`(setSignalCmd)
+    .`then`(removeSignalCmd)
     .build();
 };

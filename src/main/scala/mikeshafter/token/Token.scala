@@ -18,6 +18,9 @@ override def onEnable(): Unit = {
 	manager.registerEventHandler(LifecycleEvents.COMMANDS, commands => {
 		commands.registrar.register(tokenCommands.commands)
 	})
+
+	val signalSql: SignalSql = SignalSql();
+	signalSql.initTables();
 }
 
 override def onDisable(): Unit = {
