@@ -43,7 +43,7 @@ private val getSignalTool = Commands.literal("getsignaltool")
                 meta.setEnchantmentGlintOverride(true);
                 token.setItemMeta(meta);
                 player.getInventory.addItem(token);
-                Command.SINGLE_SUCCESS;;
+                Command.SINGLE_SUCCESS;
             case _ => Command.SINGLE_SUCCESS;
     });
 
@@ -61,7 +61,7 @@ private val newSignalCmd = Commands.literal("newsignal")
                         case block: BlockCommandSender => block.getBlock.getWorld
                     val loc: Location = new Location(w,x,y,z)
                     val name: String = ctx.getArgument("name", classOf[String]);
-                    SignalSql().newSignal(name, "", loc);
+                    SignalSql().newSignal(name, "block", loc);
                     Command.SINGLE_SUCCESS;
                 }))
             )
@@ -77,9 +77,29 @@ private val removeSignalCmd = Commands.literal("removesignal")
 		})
 	);
 
+private val setSignalCmd = Commands.literal("setsignal")
+	.`then`(Commands.argument("name", StringArgumentType.string())
+		.`then`(Commands.literal("proceed").executes(ctx => {
+			val signalLoc: Location = SignalSql().getSignalLoc(ctx.getArgument("name", classOf[String]))
+			signalLoc.getBlock().setType(Material.LIME_WOOL)
+			Command.SINGLE_SUCCESS
+		}))
+		.`then`(Commands.literal("caution").executes(ctx => {
+			val signalLoc: Location = SignalSql().getSignalLoc(ctx.getArgument("name", classOf[String]))
+			signalLoc.getBlock().setType(Material.LIME_WOOL)
+			Command.SINGLE_SUCCESS
+		}))
+		.`then`(Commands.literal("stop").executes(ctx => {
+			val signalLoc: Location = SignalSql().getSignalLoc(ctx.getArgument("name", classOf[String]))
+			signalLoc.getBlock().setType(Material.LIME_WOOL)
+			Command.SINGLE_SUCCESS
+		}))
+	);
+
 val commands: LiteralCommandNode[CommandSourceStack] = Commands.literal("token")
     .`then`(clearTokenSectionCmd)
     .`then`(getSignalTool)
     .`then`(removeSignalCmd)
+    .`then`(setSignalCmd)
     .build();
 };

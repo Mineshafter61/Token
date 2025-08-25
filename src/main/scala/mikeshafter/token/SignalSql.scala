@@ -8,6 +8,8 @@ import java.sql.SQLException
 import java.sql.Statement
 import java.util.Objects
 import org.bukkit.Location
+import java.sql.ResultSet
+import org.bukkit.Bukkit
 
 class SignalSql {
 	final private val plugin = JavaPlugin.getPlugin(classOf[Token]);
@@ -63,7 +65,7 @@ class SignalSql {
 			statement.setString(1, signal);
 			statement.setString(2, sigtype);
 			statement.setString(3, w);
-			statement.setInt(3, x);
+			statement.setInt(4, x);
 			statement.setInt(5, y);
 			statement.setInt(6, z);
 			statement.executeUpdate;
@@ -77,7 +79,7 @@ class SignalSql {
 		}
 	}
 
-	def removeSignal (signal: String) = {
+	def removeSignal(signal: String) = {
 		val sql = "DELETE FROM signals WHERE signo = ? ; ";
 		val conn = this.connect();
 		val statement = conn.prepareStatement(sql);
@@ -87,6 +89,29 @@ class SignalSql {
 		}
 		catch {
 			case e: SQLException => this.plugin.getLogger.warning(e.getLocalizedMessage);
+		}
+		finally {
+			if (conn != null) conn.close();
+			if (statement != null) statement.close();
+		}
+	}
+
+	def getSignalLoc(signal: String): Location = {
+		val sql = "SELECT w, x, y, z FROM signals WHERE signo = ?"
+		val conn = this.connect()
+		val statement = conn.prepareStatement(sql)
+		try {
+			statement.setString(1, signal);
+			val rs= statement.executeQuery();
+			val w = Bukkit.getServer.getWorld(rs.getString(1))
+			val x = rs.getInt(1);
+			val y = rs.getInt(1);
+			val z = rs.getInt(1);
+			return Location(w, x, y, z);
+		}
+		catch {
+			case e: SQLException => this.plugin.getLogger.warning(e.getLocalizedMessage);
+			null
 		}
 		finally {
 			if (conn != null) conn.close();

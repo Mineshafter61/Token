@@ -41,6 +41,6 @@ private def mm(text: String): Component = Disambiguator.mm(text);
 	val message: String = event.message().asInstanceOf[TextComponent].content();
 	val block: Block = interruptChatMap.get(player).get;
 	
-	SignalSql().newSignal(message, "", block.getLocation);
+	SignalSql().newSignal(message, "block", block.getLocation);
 }
 }
