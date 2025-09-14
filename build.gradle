@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'mikeshafter'
-version = '1.21.401'
+version = '1.21.402'
 
 repositories {
     mavenCentral()
@@ -18,8 +18,11 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
-    compileOnly 'io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT'
+    compileOnly 'io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT'
     implementation("org.scala-lang:scala3-library_3:3.6.4")
+
+    //compileOnly 'com.bergerkiller.bukkit:BKCommonLib:1.21.4-v1-SNAPSHOT'
+    //compileOnly 'com.bergerkiller.bukkit:TrainCarts:1.21.4-v1-SNAPSHOT'
 }
 test {
     useJUnitPlatform()

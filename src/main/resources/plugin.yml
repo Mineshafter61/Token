@@ -1,5 +1,5 @@
 name: Token
-version: "1.21.401"
+version: "1.21.402"
 api-version: "1.21"
 main: mikeshafter.token.Token
 description: Token signalling system

@@ -11,6 +11,8 @@ override def onEnable(): Unit = {
 	getLogger.info("Token is starting up...")
 	getServer.getPluginManager.registerEvents(new TokenPost(), this)
 	getServer.getPluginManager.registerEvents(new SignalTool(), this)
+	saveDefaultConfig()
+	getConfig.options().copyDefaults(true)
 
 	val tokenCommands: TokenCommands = new TokenCommands
 	

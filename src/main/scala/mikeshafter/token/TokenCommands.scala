@@ -10,7 +10,7 @@ import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer
 import org.bukkit.command.BlockCommandSender
 import org.bukkit.entity.Player
 import org.bukkit.inventory.ItemStack
-import org.bukkit.{Location, Material};
+import org.bukkit.{Location, Material}
 
 
 class TokenCommands {
@@ -25,7 +25,7 @@ private val clearTokenSectionCmd = Commands.literal("cleartokensection")
                 val tokenPost: TokenPost = new TokenPost();
                 val section: String = ctx.getArgument("section", classOf[String]);
                 val maxTrains: Int = ctx.getArgument("max_trains", classOf[Int]);
-                val tokenSection = tokenPost.tokenSectionMap.updated(section, new TokenSection(maxTrains));
+                val tokenSection = tokenPost.tokenSectionMap.updated(section, new TokenSection(maxTrains, section));
                 Command.SINGLE_SUCCESS;
             })
         )
@@ -61,7 +61,7 @@ private val newSignalCmd = Commands.literal("newsignal")
                         case block: BlockCommandSender => block.getBlock.getWorld
                     val loc: Location = new Location(w,x,y,z)
                     val name: String = ctx.getArgument("name", classOf[String]);
-                    SignalSql().newSignal(name, "block", loc);
+                    SignalSql().newSignal(name, "man", loc);
                     Command.SINGLE_SUCCESS;
                 }))
             )
@@ -80,18 +80,15 @@ private val removeSignalCmd = Commands.literal("removesignal")
 private val setSignalCmd = Commands.literal("setsignal")
 	.`then`(Commands.argument("name", StringArgumentType.string())
 		.`then`(Commands.literal("proceed").executes(ctx => {
-			val signalLoc: Location = SignalSql().getSignalLoc(ctx.getArgument("name", classOf[String]))
-			signalLoc.getBlock().setType(Material.LIME_WOOL)
+			SignalSql().setSignal(ctx.getArgument("name", classOf[String]), Aspect.PROCEED)
 			Command.SINGLE_SUCCESS
 		}))
 		.`then`(Commands.literal("caution").executes(ctx => {
-			val signalLoc: Location = SignalSql().getSignalLoc(ctx.getArgument("name", classOf[String]))
-			signalLoc.getBlock().setType(Material.LIME_WOOL)
+			SignalSql().setSignal(ctx.getArgument("name", classOf[String]), Aspect.CAUTION)
 			Command.SINGLE_SUCCESS
 		}))
 		.`then`(Commands.literal("stop").executes(ctx => {
-			val signalLoc: Location = SignalSql().getSignalLoc(ctx.getArgument("name", classOf[String]))
-			signalLoc.getBlock().setType(Material.LIME_WOOL)
+			SignalSql().setSignal(ctx.getArgument("name", classOf[String]), Aspect.STOP)
 			Command.SINGLE_SUCCESS
 		}))
 	);

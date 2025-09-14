@@ -1,3 +1,6 @@
+# Signal database
+database: jdbc:sqlite:Token.db
+
 # Signal block materials
 
 # I recommend setting "proceed" to a redstone-solid block (e.g. LIME_WOOL),
